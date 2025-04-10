@@ -10,10 +10,10 @@ jobs:
         matrix:
             node-version: [12,14,16]
             os: ['ubuntu-latest','windows-latest']
-            include:
+            include: #includes an specific combination
                 - node-version: 18
                   os: 'ubuntu-latest'
-            exclude:
+            exclude: #excludes an specific combination
                 - node-version: 12
                   os: 'windows-latest'
 
